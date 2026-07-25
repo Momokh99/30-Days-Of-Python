@@ -34,6 +34,7 @@
 | 30 |  [Conclusions](./30_Day_Conclusions/30_conclusions.md)|
 
 **🇫🇷 French translation** : [French](./French/README_fr.md)
+**🇸🇦 Arabic translation** : [Arabic](./Arabic/readme.md)
 
 <small>🧡🧡🧡 HAPPY CODING 🧡🧡🧡</small>
 
