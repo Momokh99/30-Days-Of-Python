@@ -14,7 +14,7 @@
 
 </div>
 
-[<< اليوم 3](./03_operators.md) | [اليوم 5 >>](../05_Day_Lists/05_lists.md)
+[<< اليوم 3](./03_operators.md) | [اليوم 5 >>](./05_lists.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -600,4 +600,4 @@ The area of a circle with radius 10 is 314 meters square.
 
 🎉 مبروك! 🎉
 
-[<< اليوم 3](./03_operators.md) | [اليوم 5 >>](../05_Day_Lists/05_lists.md)
+[<< اليوم 3](./03_operators.md) | [اليوم 5 >>](./05_lists.md)
