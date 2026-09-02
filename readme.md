@@ -125,7 +125,7 @@ Every contribution, big or small, makes a huge difference. Thank you for your su
 
 🇧🇷 [Portuguese](./Portuguese/README.md)
 🇨🇳 [中文](./Chinese/README.md)
-
+🇫🇷[French](./French/README_fr.md)
 [Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
 
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
