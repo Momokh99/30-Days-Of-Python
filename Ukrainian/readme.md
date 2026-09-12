@@ -1,9 +1,9 @@
-# 🐍 30 днів з Python 
+# 🐍 30 днів з Python
 
 | № дня |                                                  Теми                                                   |
-|-------|:-------------------------------------------------------------------------------------------------------:|
+| ----- | :-----------------------------------------------------------------------------------------------------: |
 | 01    |                                          [Вступ](./readme.md)                                           |
-| 02    | [Variables, Built-in Functions](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md) |
+| 02    | [Variables, Built-in Functions](./02_Day_Variables_builtin_functions/02_variables_builtin_functions_uk.md) |
 | 03    |                            [Operators](../03_Day_Operators/03_operators.md)                             |
 | 04    |                               [Strings](../04_Day_Strings/04_strings.md)                                |
 | 05    |                                  [Lists](../05_Day_Lists/05_lists.md)                                   |
@@ -15,11 +15,11 @@
 | 11    |                            [Functions](../11_Day_Functions/11_functions.md)                             |
 | 12    |                               [Modules](../12_Day_Modules/12_modules.md)                                |
 | 13    |               [List Comprehension](../13_Day_List_comprehension/13_list_comprehension.md)               |
-| 14    |         [Higher Order Functions](../14_Day_Higher_order_functions/14_higher_order_functions.md)         |     
-| 15    |               [Python Type Errors](../15_Day_Python_type_errors/15_python_type_errors.md)               | 
-| 16    |                  [Python Date time](../16_Day_Python_date_time/16_python_datetime.md)                   |     
-| 17    |               [Exception Handling](../17_Day_Exception_handling/17_exception_handling.md)               |    
-| 18    |             [Regular Expressions](../18_Day_Regular_expressions/18_regular_expressions.md)              |    
+| 14    |         [Higher Order Functions](../14_Day_Higher_order_functions/14_higher_order_functions.md)         |
+| 15    |               [Python Type Errors](../15_Day_Python_type_errors/15_python_type_errors.md)               |
+| 16    |                  [Python Date time](../16_Day_Python_date_time/16_python_datetime.md)                   |
+| 17    |               [Exception Handling](../17_Day_Exception_handling/17_exception_handling.md)               |
+| 18    |             [Regular Expressions](../18_Day_Regular_expressions/18_regular_expressions.md)              |
 | 19    |                      [File Handling](../19_Day_File_handling/19_file_handling.md)                       |
 | 20    |         [Python Package Manager](../20_Day_Python_package_manager/20_python_package_manager.md)         |
 | 21    |             [Classes and Objects](../21_Day_Classes_and_objects/21_classes_and_objects.md)              |
@@ -35,28 +35,41 @@
 
 🧡🧡🧡 ЩАСЛИВОГО ПРОГРАМУВАННЯ 🧡🧡🧡
 
+---
+
 <div>
-<small>Підтримайте <strong>автора</strong>, щобм він створював більше навчальних матеріалів</small> <br />  
-<a href = "https://www.paypal.me/asabeneh"><img src='../images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+<h2>💖 Спонсори</h2>
+
+Лого вашої компанії буде тут
+
 </div>
+-->
+
+### 🙌 Підтримайте проєкт
+
+Ви можете підтримати цей проєкт ставши спонсором на платформі **[GitHub Sponsors](https://github.com/sponsors/asabeneh)** або через [PayPal](https://www.paypal.me/asabeneh).
+
+Кожен внесок, і великийб і маленький важливі. Дякуємо, за вашу підтримку! 🌟
+
+---
 
 <div align="center">
   <h1> 30 днів Python: День 1 - Вступ</h1>  
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social" alt="">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Автор:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> Друге видання: Липень, 2021</small>
-  </sub>
+<sub>Автор:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> Друге видання: Липень, 2021</small>
+</sub>
+
 </div>
 
-
-[День 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
+[День 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions_uk.md)
 
 ![30 днів з Python](../images/30DaysOfPython_banner3@2x.png)
 
@@ -93,9 +106,9 @@
 
 ## Ласкаво просимо
 
-**Вітаємо** з прийняттям рішення про участь у 30-денному випробуванні з програмування на Python _(30DaysOfPython challenge). У цьому випробуванні ви дізнаєтеся все, що вам потрібно для того, щоб стати програмістом на python, і всю концепцію програмування. У кінці цього випробування ви отримаєте сертифікат про проходження випробування з програмування _30DaysOfPython_.
+**Вітаємо** з прийняттям рішення про участь у 30-денному випробуванні з програмування на Python _(30DaysOfPython challenge). У цьому випробуванні ви дізнаєтеся все, що вам потрібно для того, щоб стати програмістом на python, і всю концепцію програмування. У кінці цього випробування ви отримаєте сертифікат про проходження випробування з програмування \_30DaysOfPython_.
 
-Якщо ви бажаєте активно долучитися до випробуванні, ви можете приєднатися до групи у Telegram [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython).  
+Якщо ви бажаєте активно долучитися до випробуванні, ви можете приєднатися до групи у Telegram [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython).
 
 ## Вступ
 
@@ -161,13 +174,13 @@ Python дасть вам результати, якщо ви напишете с
 
 ![Неправильний синтаксис](../images/invalid_syntax_error.png)
 
-Як ви можете бачити з повернутої помилки, Python настільки розумний, що знає, якої помилки ми припустилися і яка була _ Syntax Error: invalid syntax (Синтаксична помилка: невірний синтаксис)_. Використання x як множника у Python є синтаксичною помилкою, оскільки (x) не є допустимим синтаксисом у Python. Замість (**x**) ми використовуємо зірочку (*) для множення. Повернута помилка чітко показує, що потрібно виправити.
+Як ви можете бачити з повернутої помилки, Python настільки розумний, що знає, якої помилки ми припустилися і яка була _ Syntax Error: invalid syntax (Синтаксична помилка: невірний синтаксис)_. Використання x як множника у Python є синтаксичною помилкою, оскільки (x) не є допустимим синтаксисом у Python. Замість (**x**) ми використовуємо зірочку (\*) для множення. Повернута помилка чітко показує, що потрібно виправити.
 
-Процес виявлення та усунення помилок у програмі називається *зневадженням (англ. debugging)*. Гайда розберемось з помилками, підставивши * замість **x**.
+Процес виявлення та усунення помилок у програмі називається _зневадженням (англ. debugging)_. Гайда розберемось з помилками, підставивши \* замість **x**.
 
 ![Виправлення синтаксичної помилки](../images/fixing_syntax_error.png)
 
-Наша помилка була виправлена, код запустився і ми отримали очікуваний результат. Як програміст, ви будете бачити подібні помилки щодня. Корисно знати, як їх зневаджувати. Щоб добре зневаджувати, ви повинні розуміти, з якими типами помилок ви стикаєтесь. Деякі з помилок Python, з якими ви можете зіткнутися:  *SyntaxError*, *IndexError*, *NameError*, *ModuleNotFoundError*, *KeyError*, *ImportError*, *AttributeError*, *TypeError*, *ValueError*, *ZeroDivisionError* тощо. Ми побачимо більше про різні типи **_помилок_** у Python у наступних розділах.
+Наша помилка була виправлена, код запустився і ми отримали очікуваний результат. Як програміст, ви будете бачити подібні помилки щодня. Корисно знати, як їх зневаджувати. Щоб добре зневаджувати, ви повинні розуміти, з якими типами помилок ви стикаєтесь. Деякі з помилок Python, з якими ви можете зіткнутися: _SyntaxError_, _IndexError_, _NameError_, _ModuleNotFoundError_, _KeyError_, _ImportError_, _AttributeError_, _TypeError_, _ValueError_, _ZeroDivisionError_ тощо. Ми побачимо більше про різні типи **_помилок_** у Python у наступних розділах.
 
 Попрактикуймось у використанні інтерактивної оболонки Python. Перейдіть до свого термінала або командного рядка і напишіть слово **python**.
 
@@ -272,19 +285,20 @@ Python is eating the world (Python поглинає світ)
 ```
 
 ### Типи даних
+
 У Python існує декілька типів даних. Почнімо з найпоширеніших. Детально різні типи даних будуть розглянуті в інших розділах. Наразі, давайте просто пройдемося по різних типах даних і познайомимося з ними. Вам не обов'язково мати чітке розуміння зараз.
 
 #### Number (число)
 
 - Integer (цілі числа): Integer(негативні, нуль та позитивні) числа
-    Приклад:
+  Приклад:
   ... -3, -2, -1, 0, 1, 2, 3 ...
 - Float (числа з рухомою комою): десяткове число
-    Приклад:
-    ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
+  Приклад:
+  ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
 - Complex numbers (уявні числа)
-    Приклад:
-    1 + j, 2 + 4j
+  Приклад:
+  1 + j, 2 + 4j
 
 #### String (рядок)
 
@@ -326,7 +340,7 @@ Python is eating the world (Python поглинає світ)
 
 #### Dictionary (словник)
 
-Об'єкт словника Python - це невпорядкований набір даних у форматі пари ключ-значення. 
+Об'єкт словника Python - це невпорядкований набір даних у форматі пари ключ-значення.
 
 **Приклад:**
 
@@ -334,8 +348,8 @@ Python is eating the world (Python поглинає світ)
 {
 'first_name':'Asabeneh',
 'last_name':'Yetayeh',
-'country':'Finland', 
-'age':250, 
+'country':'Finland',
+'age':250,
 'is_married':True,
 'skills':['JS', 'React', 'Node', 'Python']
 }
@@ -378,7 +392,7 @@ Python is eating the world (Python поглинає світ)
 
 По-перше, відкрийте свою теку з проєктому 30DaysOfPython. Якщо ви не маєте цієї теки, то створіть її з назвою 30DaysOfPython. Усередині цієї теки, створіть файл з назвою helloworld.py. Тепер зробімо те, що ми робили в інтерактивній оболонці Python, використовуючи Visual Studio Code.
 
-Інтерактивна оболонка Python виконувала друк без використання **print**, але у коді візуальної студії, щоб побачити результат, ми повинні використати вбудовану функцію *print()*. Вбудована функція *print()* приймає один або декілька аргументів у вигляді *print('аргумент1', 'аргумент2', 'аргумент3')*. Дивіться приклади нижче.
+Інтерактивна оболонка Python виконувала друк без використання **print**, але у коді візуальної студії, щоб побачити результат, ми повинні використати вбудовану функцію _print()_. Вбудована функція _print()_ приймає один або декілька аргументів у вигляді _print('аргумент1', 'аргумент2', 'аргумент3')_. Дивіться приклади нижче.
 
 **Приклад:**
 
@@ -406,11 +420,11 @@ print(type({9.8, 3.14, 2.7}))    # Set (набір)
 print(type((9.8, 3.14, 2.7)))    # Tuple (кортеж)
 ```
 
-Для запуску Python-файл перевірте зображення нижче. Ви можете запустити файл Python, натиснувши зелену кнопку на Visual Studio Code або ввівши *python helloworld.py* в терміналі.
+Для запуску Python-файл перевірте зображення нижче. Ви можете запустити файл Python, натиснувши зелену кнопку на Visual Studio Code або ввівши _python helloworld.py_ в терміналі.
 
 ![Запуск Python-скрипту](../images/running_python_script.png)
 
-🌕  Ви дивовижні. Ви щойно виконали завдання першого дня і вже на шляху до величі. Тепер виконайте кілька вправ для мозку та м'язів.
+🌕 Ви дивовижні. Ви щойно виконали завдання першого дня і вже на шляху до величі. Тепер виконайте кілька вправ для мозку та м'язів.
 
 ## 💻 Вправи - день 1
 
@@ -442,7 +456,7 @@ print(type((9.8, 3.14, 2.7)))    # Tuple (кортеж)
 
 ### Вправи: рівень 2
 
-1. Створіть теку з назвою day_1 всередині теки 30DaysOfPython. Усередині теки day_1, створити Python-файл helloworld.py і повторіть питання 1, 2, 3 та 4. Пам'ятайте використовувати _print()_, коли ви працюєте над Python-файлом. Перейдіть до теки, куди ви зберегли файл, і запустіть його.
+1. Створіть теку з назвою day*1 всередині теки 30DaysOfPython. Усередині теки day_1, створити Python-файл helloworld.py і повторіть питання 1, 2, 3 та 4. Пам'ятайте використовувати \_print()*, коли ви працюєте над Python-файлом. Перейдіть до теки, куди ви зберегли файл, і запустіть його.
 
 ### Вправи: рівень 3
 
@@ -451,4 +465,4 @@ print(type((9.8, 3.14, 2.7)))    # Tuple (кортеж)
 
 🎉 ВІТАННЯ ! 🎉
 
-[День 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
+[День 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions_uk.md)

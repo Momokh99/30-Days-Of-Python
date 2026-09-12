@@ -42,63 +42,11 @@
 <div>
 <h2>💖 Sponsors</h2>
 
-<p>Our amazing sponsors for supporting my open-source contribution and the <strong>30 Days of Challenge</strong> series!</p>
+Your company Logo will be displayed here
 
-<h3>Current Sponsors</h3>
-<hr />
-<div align="center">
-  <a href="https://ref.wisprflow.ai/MPMzRGE" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <!-- Dark mode -->
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-Logo-white.png" />
-      <!-- Light mode (fallback) -->
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-logo.png"
-           width="400px"
-           alt="Wispr Flow Logo"
-           title="Wispr Flow" />
-    </picture>
-  </a>
-
-  <h1>
-    <a href="https://ref.wisprflow.ai/MPMzRGE" target="_blank" rel="noopener noreferrer">
-      Talk to code, stay in the Flow.
-    </a>
-  </h1>
-
-  <h2>
-    <a href="https://ref.wisprflow.ai/MPMzRGE" target="_blank" rel="noopener noreferrer">
-      Flow is built for devs who live in their tools. Speak and give more context, get better results.
-    </a>
-  </h2>
 </div>
-<hr />
-<div align="center">
-  <a href="https://client.petrosky.io/aff.php?aff=402" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <!-- Dark mode -->
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-white.png" />
-      <!-- Light mode (fallback) -->
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-black.png"
-           width="400px"
-           alt="Petrosky Logo"
-           title="Petrosky" />
-    </picture>
-  </a>
+-->
 
-  <h1>
-    <a href="https://client.petrosky.io/aff.php?aff=402" target="_blank" rel="noopener noreferrer">
-      A hosting for your entire journey!
-    </a>
-  </h1>
-
-  <h2>
-    <a href="https://client.petrosky.io/aff.php?aff=402" target="_blank" rel="noopener noreferrer">
-      Affordable VPS Hosting Services For All Your  Needs
-    </a>
-  </h2>
-</div>
-
----
 
 ### 🙌 Become a Sponsor
 
@@ -126,6 +74,7 @@ Every contribution, big or small, makes a huge difference. Thank you for your su
 🇧🇷 [Portuguese](./Portuguese/README.md)
 🇨🇳 [中文](./Chinese/README.md)
 🇫🇷[French](./French/README_fr.md)
+🇬🇷 [Ελληνικά](./Greek/readme.md)
 [Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
 
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
