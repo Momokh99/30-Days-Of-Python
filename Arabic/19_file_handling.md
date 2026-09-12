@@ -40,9 +40,9 @@
 
 ## معالجة الملفات
 
-لقد رأينا حتى الآن أنواع بيانات بايثون المختلفة. عادةً ما نخزن بياناتنا في صيغ ملفات مختلفة. بالإضافة إلى معالجة الملفات، سنرى أيضًا صيغ ملفات مختلفة (.txt، .json، .xml، .csv، .tsv، .excel) في هذا القسم. أولاً، دعنا نتعارف على معالجة الملفات بصيغة الملف الشائعة (.txt).
+لقد رأينا حتى الآن أنواع بيانات بايثون المختلفة. عادةً ما نخزن بياناتنا في صيغ ملفات مختلفة. بالإضافة إلى معالجة الملفات، سنرى أيضًا صيغ ملفات مختلفة (.txt، .json، .xml، .csv، .tsv، .excel) في هذا القسم. أولاً، دعنا نتعرف على معالجة الملفات بصيغة الملف الشائعة (.txt).
 
-معالجة الملفات هي جزء مهم من البرمجة تسمح لنا بإنشاء وقراءة وتحديث وحذف الملفات. في بايثون لمعالجة البيانات نستخدم الدالة المضمنة _open()_.
+معالجة الملفات هي جزء مهم من البرمجة تسمح لنا بإنشاء وقراءة وتحديث وحذف الملفات. في بايثون، لمعالجة البيانات نستخدم الدالة المضمنة 'open()'.
 
 ```py
 # صيغة
@@ -58,16 +58,16 @@ open('filename', mode) # الوضع (r, a, w, x, t, b) يمكن أن يكون ل
 
 ### فتح الملفات للقراءة
 
-الوضع الافتراضي لـ _open_ هو القراءة، لذا لا نحتاج إلى تحديد 'r' أو 'rt'. لقد أنشأت وحفظت ملفًا باسم reading_file_example.txt في مجلد files. دعنا نرى كيف يتم ذلك:
+الوضع الافتراضي لدالة 'open' هو القراءة، لذا لا نحتاج إلى تحديد 'r' أو 'rt'. لقد أنشأت وحفظت ملفًا باسم 'reading_file_example.txt' في مجلد 'files'. دعنا نرى كيف يتم ذلك:
 
 ```py
 f = open('./files/reading_file_example.txt')
 print(f) # <_io.TextIOWrapper name='./files/reading_file_example.txt' mode='r' encoding='UTF-8'>
 ```
 
-كما ترى في المثال أعلاه، قمت بطباعة الملف المفتوح وأعطني بعض المعلومات عنه. الملف المفتوح له طرق قراءة مختلفة: _read()_، _readline_، _readlines_. يجب إغلاق الملف المفتوح بطريقة _close()_.
+كما ترى في المثال أعلاه، قمت بطباعة الملف المفتوح وأعطاني بعض المعلومات عنه. الملف المفتوح له طرق قراءة مختلفة: 'read()'، 'readline'، 'readlines'. يجب إغلاق الملف المفتوح بطريقة 'close()'.
 
-- _read()_: يقرأ النص بالكامل كنص. إذا أردنا تحديد عدد الأحرف التي نريد قراءتها، يمكننا تحديدها بتمرير قيمة صحيحة لطريقة *read(number)*.
+- 'read()': يقرأ النص بالكامل كنص. إذا أردنا تحديد عدد الأحرف التي نريد قراءتها، يمكننا تحديدها بتمرير قيمة صحيحة لطريقة 'read(number)'.
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -100,7 +100,7 @@ f.close()
 This is an
 ```
 
-- _readline()_: يقرأ السطر الأول فقط
+- 'readline()': يقرأ السطر الأول فقط
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -116,7 +116,7 @@ f.close()
 This is an example to show how to open a file and read.
 ```
 
-- _readlines()_: يقرأ كل النص سطرًا سطرًا ويعيد قائمة بأسطر
+- 'readlines()': يقرأ كل النص سطرًا سطرًا ويعيد قائمة بأسطر
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -132,7 +132,7 @@ f.close()
 ['This is an example to show how to open a file and read.\n', 'This is the second line of the text.']
 ```
 
-طريقة أخرى للحصول على جميع الأسطر كقائمة هي استخدام _splitlines()_:
+طريقة أخرى للحصول على جميع الأسطر كقائمة هي استخدام 'splitlines()':
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -148,7 +148,7 @@ f.close()
 ['This is an example to show how to open a file and read.', 'This is the second line of the text.']
 ```
 
-بعد فتح ملف، يجب إغلاقه. هناك احتمال كبير لنسان إغلاقها. هناك طريقة جديدة لفتح الملفات باستخدام _with_ - تُغلق الملفات تلقائيًا. دعنا نعيد كتابة المثال السابق بطريقة _with_:
+بعد فتح ملف، يجب إغلاقه. هناك احتمال كبير أن ننسى إغلاقه. هناك طريقة جديدة لفتح الملفات باستخدام 'with' - تُغلق الملفات تلقائيًا. دعنا نعيد كتابة المثال السابق بطريقة 'with':
 
 ```py
 with open('./files/reading_file_example.txt') as f:
@@ -165,7 +165,7 @@ with open('./files/reading_file_example.txt') as f:
 
 ### فتح الملفات للكتابة والتحديث
 
-للكتابة في ملف موجود، يجب إضافة وضع كوسيلة للدالة _open()_:
+للكتابة في ملف موجود، يجب إضافة وضع كوسيلة للدالة 'open()':
 
 - "a" - إلحاق - سيلحق في نهاية الملف، إذا لم يكن الملف موجودًا سيُنشئ ملفًا جديدًا.
 - "w" - كتابة - سيُكتب فوق أي محتوى موجود، إذا لم يكن الملف موجودًا سيُنشئه.
@@ -186,7 +186,7 @@ with open('./files/writing_file_example.txt','w') as f:
 
 ### حذف الملفات
 
-لقد رأينا في القسم السابق كيفية إنشاء وإزالة دليل باستخدام وحدة _os_. مرة أخرى الآن، إذا أردنا إزالة ملف نستخدم وحدة _os_.
+لقد رأينا في القسم السابق كيفية إنشاء وإزالة دليل باستخدام وحدة 'os'. مرة أخرى الآن، إذا أردنا إزالة ملف نستخدم وحدة 'os'.
 
 ```py
 import os
@@ -208,11 +208,11 @@ else:
 
 ### ملف بامتداد txt
 
-ملف بامتداد _txt_ هو صيغة بيانات شائعة جدًا وقد غطيناه في القسم السابق. دعنا ننتقل إلى ملف JSON
+ملف بامتداد 'txt' هو صيغة بيانات شائعة جدًا وقد غطيناه في القسم السابق. دعنا ننتقل إلى ملف 'JSON'.
 
 ### ملف بامتداد json
 
-JSON يرمز لـ JavaScript Object Notation. في الواقع، هو كائن JavaScript مُحوَّل إلى نص أو قاموس بايثون.
+'JSON' يرمز لـ 'JavaScript Object Notation'. في الواقع، هو كائن 'JavaScript' مُحوَّل إلى نص أو قاموس بايثون.
 
 **مثال:**
 
@@ -238,7 +238,7 @@ person_json = '''{
 
 ### تحويل JSON إلى قاموس
 
-لتحويل JSON إلى قاموس، نستورد أولاً وحدة json ثم نستخدم طريقة _loads_.
+لتحويل 'JSON' إلى قاموس، نستورد أولاً وحدة 'json' ثم نستخدم طريقة 'loads'.
 
 ```py
 import json
@@ -265,7 +265,7 @@ Asabeneh
 
 ### تحويل القاموس إلى JSON
 
-لتحويل قاموس إلى JSON نستخدم طريقة _dumps_ من وحدة json.
+لتحويل قاموس إلى 'JSON' نستخدم طريقة 'dumps' من وحدة 'json'.
 
 ```py
 import json
@@ -277,7 +277,7 @@ person = {
     "skills": ["JavaScrip", "React", "Python"]
 }
 # لنحوّله إلى json
-person_json = json.dumps(person, indent=4) # indent يمكن أن يكون 2 أو 4 أو 8. يجعل json أسهل في القراءة
+person_json = json.dumps(person, indent=4) # indent يمكن أن يكون 2 أو 4 أو 8. يجعل 'json' أسهل في القراءة
 print(type(person_json))
 print(person_json)
 ```
@@ -301,7 +301,7 @@ print(person_json)
 
 ### الحفظ كملف JSON
 
-يمكننا أيضًا حفظ بياناتنا كملف json. دعنا نحفظه كملف json باستخدام الخطوات التالية. لكتابة ملف json، نستخدم طريقة json.dump()، يمكنها أخذ قاموس وملف الإخراج وensure_ascii وindent.
+يمكننا أيضًا حفظ بياناتنا كملف 'json'. دعنا نحفظه كملف 'json' باستخدام الخطوات التالية. لكتابة ملف 'json'، نستخدم طريقة 'json.dump()'، يمكنها أخذ قاموس وملف الإخراج و'ensure_ascii' و'indent'.
 
 ```py
 import json
@@ -316,11 +316,11 @@ with open('./files/json_example.json', 'w', encoding='utf-8') as f:
     json.dump(person, f, ensure_ascii=False, indent=4)
 ```
 
-في الكود أعلاه، نستخدم الترميز والمسافة البادئة. المسافة البادئة تجعل ملف json أسهل في القراءة.
+في الكود أعلاه، نستخدم الترميز والمسافة البادئة. المسافة البادئة تجعل ملف 'json' أسهل في القراءة.
 
 ### ملف بامتداد csv
 
-CSV يرمز لـ Comma Separated Values. CSV هو صيغة ملف بسيطة تُستخدم لتخزين البيانات الجدولية، مثل جدول بيانات أو قاعدة بيانات. CSV هو صيغة بيانات شائعة جدًا في علوم البيانات.
+'CSV' يرمز لـ 'Comma Separated Values'. 'CSV' هو صيغة ملف بسيطة تُستخدم لتخزين البيانات الجدولية، مثل جدول بيانات أو قاعدة بيانات. 'CSV' هو صيغة بيانات شائعة جدًا في علوم البيانات.
 
 **مثال:**
 
@@ -357,7 +357,7 @@ with open('./files/csv_example.csv') as f:
 
 ### ملف بامتداد xlsx
 
-لقراءة ملفات Excel نحتاج إلى تثبيت حزمة _xlrd_. سنغطي هذا بعد تغطية تثبيت الحزم باستخدام pip.
+لقراءة ملفات 'Excel' نحتاج إلى تثبيت حزمة 'xlrd'. سنغطي هذا بعد تغطية تثبيت الحزم باستخدام 'pip'.
 
 ```py
 import xlrd
@@ -368,7 +368,7 @@ print(excel_book.sheet_names)
 
 ### ملف بامتداد xml
 
-XML هو صيغة بيانات منظمة أخرى تبدو مثل HTML. في XML العلامات غير محددة مسبقًا. السطر الأول هو إعلان XML. علامة person هي جذر XML. person لها سمة gender.
+'XML' هو صيغة بيانات منظمة أخرى تبدو مثل 'HTML'. في 'XML' العلامات غير محددة مسبقًا. السطر الأول هو إعلان 'XML'. علامة 'person' هي جذر 'XML'. 'person' لها سمة 'gender'.
 
 **مثال: XML**
 
@@ -475,7 +475,7 @@ field: skills
 ### تمارين: المستوى 2
 
 1. استخرج جميع عناوين البريد الإلكتروني الواردة كقائمة من ملف email_exchange_big.txt.
-2. ابحث عن أكثر الكلمات شيوعًا في اللغة الإنجليزية. اسم دالتك find_most_common_words، ستأخذ وسيلتين - نصًا أو ملفًا وعددًا صحيحًا موجبًا، يشير إلى عدد الكلمات. ستعيد دالتك مصفوفة توبل بترتيب تنازili. تحقق من المخرجات
+2. ابحث عن أكثر الكلمات شيوعًا في اللغة الإنجليزية. اسم دالتك find_most_common_words، ستأخذ وسيلتين - نصًا أو ملفًا وعددًا صحيحًا موجبًا، يشير إلى عدد الكلمات. ستعيد دالتك مصفوفة توبل بترتيب تنازلي. تحقق من المخرجات
 
 ```py
     # يجب أن تبدو مخرجاتك هكذا
@@ -506,7 +506,7 @@ field: skills
    2) أكثر عشر كلمات تكرارًا في [خطاب ميشيل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
    3) أكثر عشر كلمات تكرارًا في [خطاب ترمب](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
    4) أكثر عشر كلمات تكرارًا في [خطاب ميلينا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
-4. اكتب تطبيق بايثون يتحقق من التشابه بين نصين. يأخذ نصًا أو ملفًا كوسيلة ويقيّم تشابه النصين. على سبيل المثال تحقق من التشابه بين نصي [ميشيل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) و [ميلينا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt). قد تحتاج إلى دالتين، دالة لتنظيف النص (clean_text) ودالة لإزالة كلمات الدعم (remove_support_words) وأخيرًا للتحقق من التشابه (check_text_similarity). قائمة [كلمات التوقف](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) موجودة في مجلد data
+4. اكتب تطبيق بايثون يتحقق من التشابه بين نصين. يأخذ نصًا أو ملفًا كوسيلة ويقيّم تشابه النصين. على سبيل المثال تحقق من التشابه بين نصي [ميشيل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) و [ميلينا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt). قد تحتاج إلى دالتين، دالة لتنظيف النص ('clean_text') ودالة لإزالة كلمات الدعم ('remove_support_words') وأخيرًا للتحقق من التشابه ('check_text_similarity'). قائمة [كلمات التوقف](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) موجودة في مجلد data
 5. ابحث عن أكثر 10 كلمات تكرارًا في romeo_and_juliet.txt
 6. اقرأ [ملف hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) واكتشف:
    1) عدد الأسطر التي تحتوي على python أو Python
